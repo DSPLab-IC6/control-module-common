@@ -2,7 +2,6 @@
 -- Company: Bauman Moscow State Technical University
 -- Engineer: Anton Telishev
 -- 
--- Create Date:    22:48:56 02/27/2017 
 -- Design Name: 	 
 -- Module Name:     
 -- Project Name: 
@@ -11,11 +10,6 @@
 -- Description: 
 --
 -- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
 ----------------------------------------------------------------------------------
 
 LIBRARY IEEE;
@@ -24,9 +18,9 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY SPI_slave IS
 	GENERIC (
-		cpol 	   : STD_LOGIC := '0';
-		cpha 	   : STD_LOGIC := '0';
-		data_width : INTEGER := 8
+		cpol 	   	: STD_LOGIC := '0';
+		cpha 	   	: STD_LOGIC := '0';
+		data_width 	: INTEGER 	:= 8
 	);
 
 	PORT (
@@ -58,7 +52,7 @@ BEGIN
 	busy <= NOT ss_n;
 	
 	mode <= cpol XOR cpha;
-	clk <= sclk WHEN (mode = '1') ELSE not sclk;
+	clk <= sclk WHEN (mode = '1') ELSE NOT sclk;
 
  	main: PROCESS (clk, ss_n, tx_data_load_en, rx_data_request, reset_n)
  	BEGIN
@@ -70,7 +64,7 @@ BEGIN
 	 		IF rising_edge(clk) THEN
 	 			miso <= tx_buffer(tx_buffer'left);
 	 			tx_buffer(tx_buffer'left DOWNTO 0) <= tx_buffer(tx_buffer'left - 1 DOWNTO 0) & tx_buffer(tx_buffer'left);
-	 		END IF; 		
+	 		END IF; 			
 		ELSE
 			IF (reset_n = '0') THEN
 				tx_buffer <= (OTHERS => '0');
