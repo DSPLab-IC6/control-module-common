@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "H:/diplom2017/InterfaceDevice/SPI_slave.xst" -ofn "H:/diplom2017/InterfaceDevice/SPI_slave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 SPI_slave.ngc SPI_slave.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o SPI_slave_map.ncd SPI_slave.ngd SPI_slave.pcf 
+vhdtdtfi -lib work spi_slave.vhd -prj InterfaceDevice -o SPI_slave.spl -module SPI_slave -template H:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SPI_slave.spl H:/diplom2017/InterfaceDevice/SPI_slave.sym 
+xst -intstyle ise -ifn "H:/diplom2017/InterfaceDevice/SPI_slave.xst" -ofn "H:/diplom2017/InterfaceDevice/SPI_slave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 SPI_slave.ngc SPI_slave.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o SPI_slave_map.ncd SPI_slave.ngd SPI_slave.pcf 
+par -w -intstyle ise -ol high -t 1 SPI_slave_map.ncd SPI_slave.ncd SPI_slave.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPI_slave.twx SPI_slave.ncd -o SPI_slave.twr SPI_slave.pcf 
+xst -intstyle ise -ifn "H:/diplom2017/InterfaceDevice/SPI_slave.xst" -ofn "H:/diplom2017/InterfaceDevice/SPI_slave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 SPI_slave.ngc SPI_slave.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o SPI_slave_map.ncd SPI_slave.ngd SPI_slave.pcf 
+par -w -intstyle ise -ol high -t 1 SPI_slave_map.ncd SPI_slave.ncd SPI_slave.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SPI_slave.twx SPI_slave.ncd -o SPI_slave.twr SPI_slave.pcf 

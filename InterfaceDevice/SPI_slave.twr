@@ -1,0 +1,138 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+H:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml SPI_slave.twx SPI_slave.ncd -o SPI_slave.twr SPI_slave.pcf
+
+Design file:              SPI_slave.ncd
+Physical constraint file: SPI_slave.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2012-04-23)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sclk
+---------------+------------+------------+------------------+--------+
+               |Max Setup to|Max Hold to |                  | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------------+--------+
+mosi           |    0.503(R)|    0.716(R)|sclk_BUFGP        |   0.000|
+tx_data_load_en|    1.811(F)|    0.356(F)|sclk_BUFGP        |   0.000|
+---------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock ss_n
+---------------+------------+------------+------------------+--------+
+               |Max Setup to|Max Hold to |                  | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------------+--------+
+rx_data_request|    2.043(F)|    0.499(F)|ss_n_IBUF         |   0.000|
+---------------+------------+------------+------------------+--------+
+
+Clock reset_n to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+miso        |    5.992(R)|rx_buffer_and0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock sclk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+miso        |    6.783(F)|sclk_BUFGP        |   0.000|
+------------+------------+------------------+--------+
+
+Clock ss_n to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+miso        |    7.474(R)|rx_buffer_and0001 |   0.000|
+rx_data<0>  |    7.057(F)|ss_n_IBUF         |   0.000|
+rx_data<1>  |    7.042(F)|ss_n_IBUF         |   0.000|
+rx_data<2>  |    7.043(F)|ss_n_IBUF         |   0.000|
+rx_data<3>  |    7.052(F)|ss_n_IBUF         |   0.000|
+rx_data<4>  |    7.531(F)|ss_n_IBUF         |   0.000|
+rx_data<5>  |    8.072(F)|ss_n_IBUF         |   0.000|
+rx_data<6>  |    7.756(F)|ss_n_IBUF         |   0.000|
+rx_data<7>  |    8.103(F)|ss_n_IBUF         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock reset_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+reset_n        |    1.840|    1.840|         |         |
+ss_n           |    2.465|    2.465|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+reset_n        |    1.851|    1.851|    2.006|    2.006|
+sclk           |    1.673|         |         |    1.667|
+ss_n           |    2.470|    2.470|    2.998|    2.998|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ss_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+reset_n        |    0.654|    0.654|    1.994|    1.994|
+sclk           |         |         |    2.731|         |
+ss_n           |    1.279|    1.279|         |    1.805|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+ss_n           |busy           |    6.391|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Apr 10 02:29:43 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 180 MB
+
+
+

@@ -1,0 +1,2 @@
+vhdl work "CRC_8.vhd"
+vhdl work "CRC8_counter.vhd"

@@ -1,0 +1,5 @@
+vhdl isim_temp "spi_slave.vhd"
+vhdl isim_temp "SPI_master.vhd"
+vhdl isim_temp "Control_module.vhd"
+vhdl isim_temp "Control_module_scheme.vhf"
+vhdl isim_temp "Control_module_test.vhd"

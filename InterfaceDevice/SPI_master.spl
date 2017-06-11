@@ -1,0 +1,14 @@
+[Inputs]
+clk
+miso
+tr_enable
+reset_n
+=tx_data[7:0]=
+=slave_addr[3:0]=
+[Outputs]
+sclk
+mosi
+busy
+=ss_n[14:0]=
+=rx_data[7:0]=
+[BiDir]

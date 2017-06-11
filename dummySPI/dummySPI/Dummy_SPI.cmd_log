@@ -1,0 +1,137 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Dummy_SPI H:/dummySPI/dummySPI/Dummy_SPI.sch H:/dummySPI/dummySPI/Dummy_SPI.sym 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc6slx9-tqg144-2 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -mt off Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-4 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-4 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-4 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-4 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "F:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "F:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 
+xst -intstyle ise -ifn "H:/dummySPI/dummySPI/Dummy_SPI.xst" -ofn "H:/dummySPI/dummySPI/Dummy_SPI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Dummy_SPI.ucf -p xc3s500e-fg320-5 Dummy_SPI.ngc Dummy_SPI.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Dummy_SPI_map.ncd Dummy_SPI.ngd Dummy_SPI.pcf 
+par -w -intstyle ise -ol high -t 1 Dummy_SPI_map.ncd Dummy_SPI.ncd Dummy_SPI.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Dummy_SPI.twx Dummy_SPI.ncd -o Dummy_SPI.twr Dummy_SPI.pcf -ucf Dummy_SPI.ucf 
+bitgen -intstyle ise -f Dummy_SPI.ut Dummy_SPI.ncd 

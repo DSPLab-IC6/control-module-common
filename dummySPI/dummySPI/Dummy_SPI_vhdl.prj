@@ -1,0 +1,3 @@
+vhdl work "H:\dummySPI\dummySPI\spi_slave.vhd"
+vhdl work "H:\dummySPI\dummySPI\Counter.vhd"
+vhdl work "H:\dummySPI\dummySPI\Dummy_SPI.vhf"

@@ -1,0 +1,13 @@
+[Inputs]
+sclk
+mosi
+ss_n
+rx_data_request
+tx_data_load_en
+reset_n
+=tx_data[7:0]=
+[Outputs]
+miso
+busy
+=rx_data[7:0]=
+[BiDir]

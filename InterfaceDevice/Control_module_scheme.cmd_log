@@ -1,0 +1,13 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Control_module_scheme H:/diplom2017/InterfaceDevice/Control_module_scheme.sch H:/diplom2017/InterfaceDevice/Control_module_scheme.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl Control_module_scheme_drc.vhf -w H:/diplom2017/InterfaceDevice/Control_module_scheme.sch 
+xst -intstyle ise -ifn "H:/diplom2017/InterfaceDevice/Control_module_scheme.xst" -ofn "H:/diplom2017/InterfaceDevice/Control_module_scheme.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Control_module_scheme.ngc Control_module_scheme.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Control_module_scheme_map.ncd Control_module_scheme.ngd Control_module_scheme.pcf 
+par -w -intstyle ise -ol high -t 1 Control_module_scheme_map.ncd Control_module_scheme.ncd Control_module_scheme.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Control_module_scheme.twx Control_module_scheme.ncd -o Control_module_scheme.twr Control_module_scheme.pcf 
+bitgen -intstyle ise -f Control_module_scheme.ut Control_module_scheme.ncd 
+xst -intstyle ise -ifn "I:/diplom2017/InterfaceDevice/Control_module_scheme.xst" -ofn "I:/diplom2017/InterfaceDevice/Control_module_scheme.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Control_module_scheme.ngc Control_module_scheme.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Control_module_scheme_map.ncd Control_module_scheme.ngd Control_module_scheme.pcf 
+par -w -intstyle ise -ol high -t 1 Control_module_scheme_map.ncd Control_module_scheme.ncd Control_module_scheme.pcf 
+bitgen -intstyle ise -f Control_module_scheme.ut Control_module_scheme.ncd 

@@ -1,0 +1,87 @@
+
+****** PlanAhead v14.1 (64-bit)
+  **** Build 179419 by xbuild on Thu Apr 26 11:43:29 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Device-36] Loading parts and site information from F:/Xilinx/14.1/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [F:/Xilinx/14.1/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [F:/Xilinx/14.1/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+starting gui ...
+source F:/dummySPI/dummySPI/pa.fromHdl.tcl
+# create_project -name dummySPI -dir "F:/dummySPI/dummySPI/planAhead_run_1" -part xc3s500efg320-5
+Parsing template File [F:/Xilinx/14.1/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [F:/Xilinx/14.1/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Parsing template File [F:/Xilinx/14.1/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [F:/Xilinx/14.1/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [F:/Xilinx/14.1/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [F:/Xilinx/14.1/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 301.781 ; gain = 44.652
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Dummy_SPI.ucf" [current_fileset -constrset]
+Adding file 'F:\dummySPI\dummySPI\Dummy_SPI.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {spi_slave.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Counter.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Dummy_SPI.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top Dummy_SPI $srcset
+# add_files [list {Dummy_SPI.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-5
+Using Verific elaboration
+Parsing VHDL file "F:/Xilinx/14.1/ISE_DS/PlanAhead/data\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Parsing VHDL file "F:/Xilinx/14.1/ISE_DS/PlanAhead/data\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Parsing VHDL file "F:\dummySPI\dummySPI\spi_slave.vhd" into library work
+Parsing VHDL file "F:\dummySPI\dummySPI\Counter.vhd" into library work
+Parsing VHDL file "F:\dummySPI\dummySPI\Dummy_SPI.vhf" into library work
+INFO: [Project-86] Reading macro library F:/Xilinx/14.1/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [F:/Xilinx/14.1/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [F:/Xilinx/14.1/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from F:/Xilinx/14.1/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from F:/Xilinx/14.1/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from F:/Xilinx/14.1/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from F:/Xilinx/14.1/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device-19] Loading pkg sso from F:/Xilinx/14.1/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : F:/Xilinx/14.1/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing-77] Reading timing library F:/Xilinx/14.1/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing-34] Done reading timing library F:/Xilinx/14.1/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [F:\dummySPI\dummySPI\Dummy_SPI.ucf]
+Finished Parsing UCF File [F:\dummySPI\dummySPI\Dummy_SPI.ucf]
+INFO: [Project-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project-176] Phase 0 Netlist Checksum: add80dce 
+open_rtl_design: Time (s): elapsed = 00:00:21 . Memory (MB): peak = 477.172 ; gain = 172.922
+startgroup
+set_property package_pin R4 [get_ports {RX_DATA[0]}]
+endgroup
+startgroup
+set_property package_pin F4 [get_ports {RX_DATA[1]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {RX_DATA[2]}]
+endgroup
+startgroup
+set_property package_pin E17 [get_ports {RX_DATA[3]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {RX_DATA[4]}]
+endgroup
+startgroup
+set_property package_pin K15 [get_ports {RX_DATA[5]}]
+endgroup
+startgroup
+set_property package_pin J15 [get_ports {RX_DATA[6]}]
+endgroup
+startgroup
+set_property package_pin J14 [get_ports {RX_DATA[7]}]
+endgroup
+save_design
+exit
+INFO: [Common-206] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

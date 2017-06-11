@@ -1,0 +1,751 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: Control_module_scheme.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Control_module_scheme.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Control_module_scheme"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : Control_module_scheme
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/Control_module_scheme is now defined in a different file.  It was defined in "H:/diplom2017/InterfaceDevice/Control_module_scheme.vhf", and is now defined in "I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf".
+WARNING:HDLParsers:3607 - Unit work/Control_module_scheme/BEHAVIORAL is now defined in a different file.  It was defined in "H:/diplom2017/InterfaceDevice/Control_module_scheme.vhf", and is now defined in "I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf".
+WARNING:HDLParsers:3607 - Unit work/Control_module is now defined in a different file.  It was defined in "H:/diplom2017/InterfaceDevice/Control_module.vhd", and is now defined in "I:/diplom2017/InterfaceDevice/Control_module.vhd".
+WARNING:HDLParsers:3607 - Unit work/Control_module/Logic is now defined in a different file.  It was defined in "H:/diplom2017/InterfaceDevice/Control_module.vhd", and is now defined in "I:/diplom2017/InterfaceDevice/Control_module.vhd".
+WARNING:HDLParsers:3607 - Unit work/SPI_master is now defined in a different file.  It was defined in "H:/diplom2017/InterfaceDevice/SPI_master.vhd", and is now defined in "I:/diplom2017/InterfaceDevice/SPI_master.vhd".
+WARNING:HDLParsers:3607 - Unit work/SPI_master/Logic is now defined in a different file.  It was defined in "H:/diplom2017/InterfaceDevice/SPI_master.vhd", and is now defined in "I:/diplom2017/InterfaceDevice/SPI_master.vhd".
+WARNING:HDLParsers:3607 - Unit work/SPI_slave is now defined in a different file.  It was defined in "H:/diplom2017/InterfaceDevice/spi_slave.vhd", and is now defined in "I:/diplom2017/InterfaceDevice/spi_slave.vhd".
+WARNING:HDLParsers:3607 - Unit work/SPI_slave/Logic is now defined in a different file.  It was defined in "H:/diplom2017/InterfaceDevice/spi_slave.vhd", and is now defined in "I:/diplom2017/InterfaceDevice/spi_slave.vhd".
+Compiling vhdl file "I:/diplom2017/InterfaceDevice/spi_slave.vhd" in Library work.
+Architecture logic of Entity spi_slave is up to date.
+Compiling vhdl file "I:/diplom2017/InterfaceDevice/SPI_master.vhd" in Library work.
+Architecture logic of Entity spi_master is up to date.
+Compiling vhdl file "I:/diplom2017/InterfaceDevice/Control_module.vhd" in Library work.
+Entity <control_module> compiled.
+Entity <control_module> (Architecture <logic>) compiled.
+Compiling vhdl file "I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf" in Library work.
+Architecture behavioral of Entity control_module_scheme is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Control_module_scheme> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SPI_slave> in library <work> (architecture <logic>) with generics.
+	cpha = '0'
+	cpol = '0'
+	data_width = 8
+
+Analyzing hierarchy for entity <SPI_master> in library <work> (architecture <logic>) with generics.
+	clk_div = 1
+	cpha = '0'
+	cpol = '0'
+	data_width = 8
+	slave_addr_width = 4
+	slaves_count = 15
+
+Analyzing hierarchy for entity <Control_module> in library <work> (architecture <logic>) with generics.
+	cmd_result_width = 32
+	cmd_width = 8
+	crc_width = 8
+	data_width = 8
+	error_width = 8
+	module_addr_width = 8
+	reg_addr_width = 8
+	slave_addr_width = 4
+	state_width = 8
+	value_width = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Control_module_scheme> in library <work> (Architecture <behavioral>).
+Entity <Control_module_scheme> analyzed. Unit <Control_module_scheme> generated.
+
+Analyzing generic Entity <SPI_slave> in library <work> (Architecture <logic>).
+	cpha = '0'
+	cpol = '0'
+	data_width = 8
+WARNING:Xst:819 - "I:/diplom2017/InterfaceDevice/spi_slave.vhd" line 57: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <tx_data>, <rx_buffer>
+Entity <SPI_slave> analyzed. Unit <SPI_slave> generated.
+
+Analyzing generic Entity <SPI_master> in library <work> (Architecture <logic>).
+	clk_div = 1
+	cpha = '0'
+	cpol = '0'
+	data_width = 8
+	slave_addr_width = 4
+	slaves_count = 15
+WARNING:Xst:819 - "I:/diplom2017/InterfaceDevice/SPI_master.vhd" line 67: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sclk_int>
+INFO:Xst:2679 - Register <clk_ratio> in unit <SPI_master> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <SPI_master> analyzed. Unit <SPI_master> generated.
+
+Analyzing generic Entity <Control_module> in library <work> (Architecture <logic>).
+	cmd_result_width = 32
+	cmd_width = 8
+	crc_width = 8
+	data_width = 8
+	error_width = 8
+	module_addr_width = 8
+	reg_addr_width = 8
+	slave_addr_width = 4
+	state_width = 8
+	value_width = 32
+WARNING:Xst:819 - "I:/diplom2017/InterfaceDevice/Control_module.vhd" line 137: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <state>
+WARNING:Xst:819 - "I:/diplom2017/InterfaceDevice/Control_module.vhd" line 144: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <state>
+Entity <Control_module> analyzed. Unit <Control_module> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SPI_slave>.
+    Related source file is "I:/diplom2017/InterfaceDevice/spi_slave.vhd".
+INFO:Xst:1608 - Relative priorities of control signals on register <tx_buffer> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 8-bit latch for signal <rx_data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:736 - Found 1-bit latch for signal <Mtrien_miso> created at line 65. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 1-bit tristate buffer for signal <miso>.
+    Found 1-bit register for signal <Mtridata_miso> created at line 65.
+    Found 8-bit register for signal <rx_buffer>.
+    Found 8-bit register for signal <tx_buffer>.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Tristate(s).
+Unit <SPI_slave> synthesized.
+
+
+Synthesizing Unit <SPI_master>.
+    Related source file is "I:/diplom2017/InterfaceDevice/SPI_master.vhd".
+    Found 8-bit register for signal <rx_data>.
+    Found 1-bit register for signal <busy>.
+    Found 15-bit register for signal <ss_n>.
+    Found 1-bit tristate buffer for signal <mosi>.
+    Found 5-bit comparator less for signal <busy$cmp_lt0000> created at line 134.
+    Found 32-bit register for signal <clk_count>.
+    Found 32-bit adder for signal <clk_count$addsub0000> created at line 145.
+    Found 32-bit 4-to-1 multiplexer for signal <clk_count$mux0000>.
+    Found 5-bit up counter for signal <clk_toggles>.
+    Found 1-bit register for signal <latch_data>.
+    Found 1-bit register for signal <Mtridata_mosi> created at line 74.
+    Found 1-bit register for signal <Mtrien_mosi> created at line 74.
+    Found 8-bit register for signal <rx_buffer>.
+    Found 1-bit register for signal <sclk_int>.
+    Found 5-bit comparator greatequal for signal <sclk_int$cmp_ge0000> created at line 134.
+    Found 4-bit register for signal <slave_index>.
+    Found 4-bit comparator less for signal <slave_index$cmp_lt0000> created at line 92.
+    Found 1-bit register for signal <state<0>>.
+    Found 8-bit register for signal <tx_buffer>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  81 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred  32 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <SPI_master> synthesized.
+
+
+Synthesizing Unit <Control_module>.
+    Related source file is "I:/diplom2017/InterfaceDevice/Control_module.vhd".
+WARNING:Xst:647 - Input <module_spi_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <module_tr_enable> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <module_number> is never assigned. Tied to value 0000.
+WARNING:Xst:1305 - Output <data_to_module> is never assigned. Tied to value 00000000.
+WARNING:Xst:647 - Input <data_from_module> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <spi_reset> is never assigned. Tied to value 0.
+WARNING:Xst:1780 - Signal <state_code> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <module_addr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_state> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cmd_result> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cmd_crc> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 8-bit latch for signal <data_to_cd>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <state>.
+    Using one-hot encoding for signal <cmd>.
+    Found 32-bit up counter for signal <byte_received_count>.
+    Found 5-bit register for signal <cmd>.
+    Found 32-bit adder for signal <cmd$addsub0000> created at line 152.
+    Found 4-bit register for signal <state>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Control_module> synthesized.
+
+
+Synthesizing Unit <Control_module_scheme>.
+    Related source file is "I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf".
+Unit <Control_module_scheme> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 38
+ 1-bit register                                        : 30
+ 32-bit register                                       : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+ 8-bit register                                        : 4
+# Latches                                              : 3
+ 1-bit latch                                           : 1
+ 8-bit latch                                           : 2
+# Comparators                                          : 3
+ 4-bit comparator less                                 : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <slave_index_0> in Unit <CM_SPI_master> is equivalent to the following 3 FFs/Latches, which will be removed : <slave_index_1> <slave_index_2> <slave_index_3> 
+WARNING:Xst:1426 - The value init of the FF/Latch state_0 hinder the constant cleaning in the block Control_module_core.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <ss_n_5> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_12> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_6> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_13> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_7> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_14> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sclk_int> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_8> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_9> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtrien_mosi> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <state_3> has a constant value of 0 in block <Control_module_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tx_buffer_0> has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tx_buffer_1> has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tx_buffer_2> has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tx_buffer_3> has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tx_buffer_4> has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tx_buffer_5> has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tx_buffer_6> has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tx_buffer_7> has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <latch_data> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_0> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_1> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_2> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_3> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_10> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_4> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ss_n_11> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <state_0> has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <slave_index_0> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Mtridata_mosi> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <cmd_0> of sequential type is unconnected in block <Control_module_core>.
+WARNING:Xst:2677 - Node <cmd_1> of sequential type is unconnected in block <Control_module_core>.
+WARNING:Xst:2677 - Node <cmd_2> of sequential type is unconnected in block <Control_module_core>.
+WARNING:Xst:2677 - Node <cmd_4> of sequential type is unconnected in block <Control_module_core>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <Mtrien_miso>.
+WARNING:Xst:1710 - FF/Latch <clk_count_31> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_30> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_29> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_28> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_27> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_26> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_25> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_24> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_23> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_22> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_21> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_20> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_19> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_18> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_17> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_16> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtrien_mosi> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_0> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_1> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_2> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_3> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_4> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_5> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_6> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_7> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_8> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_9> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_10> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_11> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_12> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_13> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_14> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <clk_count_15> (without init value) has a constant value of 0 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Mtrien_mosi> (without init value) has a constant value of 1 in block <CM_SPI_master>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <cmd_0> of sequential type is unconnected in block <Control_module>.
+WARNING:Xst:2677 - Node <cmd_1> of sequential type is unconnected in block <Control_module>.
+WARNING:Xst:2677 - Node <cmd_2> of sequential type is unconnected in block <Control_module>.
+WARNING:Xst:2677 - Node <cmd_4> of sequential type is unconnected in block <Control_module>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 103
+ Flip-Flops                                            : 103
+# Latches                                              : 3
+ 1-bit latch                                           : 1
+ 8-bit latch                                           : 2
+# Comparators                                          : 3
+ 4-bit comparator less                                 : 1
+ 5-bit comparator greatequal                           : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch state_0 hinder the constant cleaning in the block Control_module.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <state_3> has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_4> is equivalent to the following 5 FFs/Latches, which will be removed : <6> <5> <4> <3> <2> 
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <LPM_LATCH_4>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Control_module_scheme> ...
+
+Optimizing unit <Control_module> ...
+WARNING:Xst:1710 - FF/Latch <CM_SPI_master/slave_index_3> (without init value) has a constant value of 0 in block <Control_module_scheme>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CM_SPI_master/slave_index_2> (without init value) has a constant value of 0 in block <Control_module_scheme>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CM_SPI_master/slave_index_1> (without init value) has a constant value of 0 in block <Control_module_scheme>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CM_SPI_master/slave_index_0> (without init value) has a constant value of 0 in block <Control_module_scheme>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_data_7> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_data_6> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_data_5> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_data_4> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_data_3> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_data_2> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_data_1> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_data_0> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/busy> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_buffer_7> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_buffer_6> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_buffer_5> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_buffer_4> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_buffer_3> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_buffer_2> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_buffer_1> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/rx_buffer_0> of sequential type is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1294 - Latch <CD_SPI_slave/Mtrien_miso> is equivalent to a wire in block <Control_module_scheme>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <CM_SPI_master/ss_n_9> in Unit <Control_module_scheme> is equivalent to the following 13 FFs/Latches, which will be removed : <CM_SPI_master/ss_n_8> <CM_SPI_master/ss_n_14> <CM_SPI_master/ss_n_7> <CM_SPI_master/ss_n_13> <CM_SPI_master/ss_n_6> <CM_SPI_master/ss_n_12> <CM_SPI_master/ss_n_5> <CM_SPI_master/ss_n_11> <CM_SPI_master/ss_n_4> <CM_SPI_master/ss_n_10> <CM_SPI_master/ss_n_3> <CM_SPI_master/ss_n_2> <CM_SPI_master/ss_n_1> 
+Found area constraint ratio of 100 (+ 5) on block Control_module_scheme, actual ratio is 2.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/clk_toggles_2> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/clk_toggles_0> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/clk_toggles_1> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/tx_buffer_0> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/tx_buffer_1> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/tx_buffer_2> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/tx_buffer_3> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/tx_buffer_4> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/tx_buffer_5> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/tx_buffer_6> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <CM_SPI_master/clk_toggles_3> is unconnected in block <Control_module_scheme>.
+WARNING:Xst:2677 - Node <CM_SPI_master/Mtrien_mosi> of sequential type is unconnected in block <Control_module_scheme>.
+
+Final Macro Processing ...
+
+Processing Unit <Control_module_scheme> :
+INFO:Xst:741 - HDL ADVISOR - A 6-bit shift register was found for signal <CD_SPI_slave/tx_buffer_7> and currently occupies 6 logic cells (3 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <Control_module_scheme> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Control_module_scheme.ngr
+Top Level Output File Name         : Control_module_scheme
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 222
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 62
+#      LUT2                        : 7
+#      LUT4                        : 9
+#      LUT4_L                      : 1
+#      MUXCY                       : 71
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 63
+#      FDCE_1                      : 8
+#      FDCPE                       : 8
+#      FDE                         : 33
+#      FDE_1                       : 4
+#      LD                          : 8
+#      LD_1                        : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 2
+#      OBUF                        : 16
+#      OBUFT                       : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       60  out of   4656     1%  
+ Number of Slice Flip Flops:             63  out of   9312     0%  
+ Number of 4 input LUTs:                 85  out of   9312     0%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  21  out of    232     9%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CD_SS_N                            | IBUF+BUFG              | 46    |
+CD_SCLK                            | BUFGP                  | 17    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------+-------------------------------+-------+
+Control Signal                                                       | Buffer(FF name)               | Load  |
+---------------------------------------------------------------------+-------------------------------+-------+
+CD_SS_N                                                              | IBUF                          | 14    |
+CM_SPI_master/Mtridata_mosi(XST_GND:G)                               | NONE(CD_SPI_slave/tx_buffer_2)| 6     |
+CD_SPI_slave/tx_buffer_0_and0000(CD_SPI_slave/tx_buffer_0_and00001:O)| NONE(CD_SPI_slave/tx_buffer_0)| 1     |
+CD_SPI_slave/tx_buffer_0_or0000(CD_SPI_slave/tx_buffer_0_or00001:O)  | NONE(CD_SPI_slave/tx_buffer_0)| 1     |
+CD_SPI_slave/tx_buffer_1_and0000(CD_SPI_slave/tx_buffer_1_and00001:O)| NONE(CD_SPI_slave/tx_buffer_1)| 1     |
+CD_SPI_slave/tx_buffer_1_or0000(CD_SPI_slave/tx_buffer_1_or00001:O)  | NONE(CD_SPI_slave/tx_buffer_1)| 1     |
+---------------------------------------------------------------------+-------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.849ns (Maximum Frequency: 145.998MHz)
+   Minimum input arrival time before clock: 1.731ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: 5.212ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CD_SCLK'
+  Clock period: 1.162ns (frequency: 860.622MHz)
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Delay:               1.162ns (Levels of Logic = 0)
+  Source:            CD_SPI_slave/tx_buffer_7 (FF)
+  Destination:       CD_SPI_slave/Mtridata_miso (FF)
+  Source Clock:      CD_SCLK falling
+  Destination Clock: CD_SCLK falling
+
+  Data Path: CD_SPI_slave/tx_buffer_7 to CD_SPI_slave/Mtridata_miso
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:C->Q            2   0.514   0.380  CD_SPI_slave/tx_buffer_7 (CD_SPI_slave/tx_buffer_7)
+     FDCPE:D                   0.268          CD_SPI_slave/tx_buffer_0
+    ----------------------------------------
+    Total                      1.162ns (0.782ns logic, 0.380ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CD_SS_N'
+  Clock period: 6.849ns (frequency: 145.998MHz)
+  Total number of paths / destination ports: 2690 / 73
+-------------------------------------------------------------------------
+Delay:               6.849ns (Levels of Logic = 34)
+  Source:            Control_module_core/byte_received_count_1 (FF)
+  Destination:       Control_module_core/state_2 (FF)
+  Source Clock:      CD_SS_N rising
+  Destination Clock: CD_SS_N rising
+
+  Data Path: Control_module_core/byte_received_count_1 to Control_module_core/state_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.532  Control_module_core/byte_received_count_1 (Control_module_core/byte_received_count_1)
+     LUT1:I0->O            1   0.612   0.000  Control_module_core/Madd_cmd_addsub0000_cy<1>_rt (Control_module_core/Madd_cmd_addsub0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Control_module_core/Madd_cmd_addsub0000_cy<1> (Control_module_core/Madd_cmd_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<2> (Control_module_core/Madd_cmd_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<3> (Control_module_core/Madd_cmd_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<4> (Control_module_core/Madd_cmd_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<5> (Control_module_core/Madd_cmd_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<6> (Control_module_core/Madd_cmd_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<7> (Control_module_core/Madd_cmd_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<8> (Control_module_core/Madd_cmd_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<9> (Control_module_core/Madd_cmd_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<10> (Control_module_core/Madd_cmd_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<11> (Control_module_core/Madd_cmd_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<12> (Control_module_core/Madd_cmd_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<13> (Control_module_core/Madd_cmd_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<14> (Control_module_core/Madd_cmd_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<15> (Control_module_core/Madd_cmd_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Control_module_core/Madd_cmd_addsub0000_cy<16> (Control_module_core/Madd_cmd_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<17> (Control_module_core/Madd_cmd_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<18> (Control_module_core/Madd_cmd_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<19> (Control_module_core/Madd_cmd_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<20> (Control_module_core/Madd_cmd_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<21> (Control_module_core/Madd_cmd_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<22> (Control_module_core/Madd_cmd_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<23> (Control_module_core/Madd_cmd_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<24> (Control_module_core/Madd_cmd_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<25> (Control_module_core/Madd_cmd_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<26> (Control_module_core/Madd_cmd_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<27> (Control_module_core/Madd_cmd_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<28> (Control_module_core/Madd_cmd_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<29> (Control_module_core/Madd_cmd_addsub0000_cy<29>)
+     MUXCY:CI->O           0   0.052   0.000  Control_module_core/Madd_cmd_addsub0000_cy<30> (Control_module_core/Madd_cmd_addsub0000_cy<30>)
+     XORCY:CI->O           1   0.699   0.360  Control_module_core/Madd_cmd_addsub0000_xor<31> (Control_module_core/cmd_addsub0000<31>)
+     LUT4:I3->O            1   0.612   0.000  Control_module_core/cmd_and0000_wg_lut<8> (Control_module_core/cmd_and0000_wg_lut<8>)
+     MUXCY:S->O            4   0.641   0.499  Control_module_core/cmd_and0000_wg_cy<8> (Control_module_core/cmd_and0000)
+     FDE_1:CE                  0.483          Control_module_core/cmd_3
+    ----------------------------------------
+    Total                      6.849ns (5.459ns logic, 1.391ns route)
+                                       (79.7% logic, 20.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CD_SCLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.731ns (Levels of Logic = 1)
+  Source:            CD_MOSI (PAD)
+  Destination:       CD_SPI_slave/rx_buffer_0 (FF)
+  Destination Clock: CD_SCLK rising
+
+  Data Path: CD_MOSI to CD_SPI_slave/rx_buffer_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  CD_MOSI_IBUF (CD_MOSI_IBUF)
+     FDCE_1:D                  0.268          CD_SPI_slave/rx_buffer_0
+    ----------------------------------------
+    Total                      1.731ns (1.374ns logic, 0.357ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CD_SCLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            CD_SPI_slave/Mtridata_miso (FF)
+  Destination:       CD_MISO (PAD)
+  Source Clock:      CD_SCLK falling
+
+  Data Path: CD_SPI_slave/Mtridata_miso to CD_MISO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.514   0.357  CD_SPI_slave/Mtridata_miso (CD_SPI_slave/Mtridata_miso)
+     OBUFT:I->O                3.169          CD_MISO_OBUFT (CD_MISO)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.212ns (Levels of Logic = 2)
+  Source:            CD_SS_N (PAD)
+  Destination:       CD_MISO (PAD)
+
+  Data Path: CD_SS_N to CD_MISO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.106   0.937  CD_SS_N_IBUF (CD_SPI_slave/Mtrien_miso_mux00001)
+     OBUFT:T->O                3.169          CD_MISO_OBUFT (CD_MISO)
+    ----------------------------------------
+    Total                      5.212ns (4.275ns logic, 0.937ns route)
+                                       (82.0% logic, 18.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.06 secs
+ 
+--> 
+
+Total memory usage is 284652 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  144 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

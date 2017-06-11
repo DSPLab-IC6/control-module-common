@@ -1,0 +1,5 @@
+set -tmpdir "H:/diplom2017/InterfaceDevice/xst/projnav.tmp"
+set -xsthdpdir "H:/diplom2017/InterfaceDevice/xst"
+elaborate
+-ifn CRC8_counter.prj
+-ifmt mixed

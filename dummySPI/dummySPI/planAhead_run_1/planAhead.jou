@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# PlanAhead v14.1 (64-bit)
+# Build 179419 by xbuild on Thu Apr 26 11:43:29 MDT 2012
+# Start of session at: Sun May 21 12:03:40 2017
+# Process ID: 2160
+# Log file: F:/dummySPI/dummySPI/planAhead_run_1/planAhead.log
+# Journal file: F:/dummySPI/dummySPI/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source F:/dummySPI/dummySPI/pa.fromHdl.tcl
+startgroup
+set_property package_pin R4 [get_ports {RX_DATA[0]}]
+endgroup
+startgroup
+set_property package_pin F4 [get_ports {RX_DATA[1]}]
+endgroup
+startgroup
+set_property package_pin P15 [get_ports {RX_DATA[2]}]
+endgroup
+startgroup
+set_property package_pin E17 [get_ports {RX_DATA[3]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {RX_DATA[4]}]
+endgroup
+startgroup
+set_property package_pin K15 [get_ports {RX_DATA[5]}]
+endgroup
+startgroup
+set_property package_pin J15 [get_ports {RX_DATA[6]}]
+endgroup
+startgroup
+set_property package_pin J14 [get_ports {RX_DATA[7]}]
+endgroup
+save_design
+exit

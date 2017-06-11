@@ -1,0 +1,21 @@
+V3 16
+FL F:/dummySPI/dummySPI/Counter.vhd 2017/05/21.12:01:39 P.15xf
+FL F:/dummySPI/dummySPI/Dummy_SPI.vhf 2017/05/21.12:17:17 P.15xf
+FL F:/dummySPI/dummySPI/spi_slave.vhd 2017/05/21.13:12:23 P.15xf
+FL H:/dummySPI/dummySPI/Counter.vhd 2017/05/21.12:01:39 P.15xf
+EN work/Counter 1495661026 FL H:/dummySPI/dummySPI/Counter.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/Counter/Logic 1495661027 \
+      FL H:/dummySPI/dummySPI/Counter.vhd EN work/Counter 1495661026
+FL H:/dummySPI/dummySPI/Dummy_SPI.vhf 2017/05/21.14:43:01 P.15xf
+EN work/Dummy_SPI 1495661030 FL H:/dummySPI/dummySPI/Dummy_SPI.vhf \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629
+AR work/Dummy_SPI/BEHAVIORAL 1495661031 \
+      FL H:/dummySPI/dummySPI/Dummy_SPI.vhf EN work/Dummy_SPI 1495661030 \
+      CP Counter CP SPI_slave CP VCC
+FL H:/dummySPI/dummySPI/spi_slave.vhd 2017/05/25.00:23:40 P.15xf
+EN work/SPI_slave 1495661028 FL H:/dummySPI/dummySPI/spi_slave.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/SPI_slave/Logic 1495661029 \
+      FL H:/dummySPI/dummySPI/spi_slave.vhd EN work/SPI_slave 1495661028

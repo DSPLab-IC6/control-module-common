@@ -1,0 +1,28 @@
+Running: I:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o I:/diplom2017/InterfaceDevice/Control_module_scheme_test_isim_beh.exe -prj I:/diplom2017/InterfaceDevice/Control_module_scheme_test_beh.prj work.Control_module_scheme_test 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "I:/diplom2017/InterfaceDevice/spi_slave.vhd" into library work
+Parsing VHDL file "I:/diplom2017/InterfaceDevice/SPI_master.vhd" into library work
+Parsing VHDL file "I:/diplom2017/InterfaceDevice/Control_module.vhd" into library work
+Parsing VHDL file "I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf" into library work
+Parsing VHDL file "I:/diplom2017/InterfaceDevice/Control_module_test.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:960 - "I:/diplom2017/InterfaceDevice/Control_module.vhd" Line 230: Expression has incompatible type
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package std_logic_arith
+Compiling architecture logic of entity SPI_slave [\SPI_slave('0','0',8)\]
+Compiling architecture logic of entity SPI_master [\SPI_master('0','0',1,15,4,8)\]
+Compiling architecture logic of entity Control_module [\Control_module(8,4,8,8,8,8,32,8...]
+Compiling architecture behavioral of entity Control_module_scheme [control_module_scheme_default]
+Compiling architecture behavioral of entity control_module_scheme_test
+Time Resolution for simulation is 1ps.
+Compiled 14 VHDL Units
+Built simulation executable I:/diplom2017/InterfaceDevice/Control_module_scheme_test_isim_beh.exe
+Fuse Memory Usage: 46588 KB
+Fuse CPU Usage: 609 ms

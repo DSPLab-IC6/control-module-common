@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=H:\dummySPI\dummySPI\Dummy_SPI.ncd
+OUTFILE=H:\dummySPI\dummySPI\Dummy_SPI.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=H:\dummySPI\dummySPI
+LICENSE=WebPack
+USER_INFO=211169423_0_0_153

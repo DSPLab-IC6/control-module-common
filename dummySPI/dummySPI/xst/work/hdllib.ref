@@ -1,0 +1,6 @@
+EN dummy_spi NULL H:/dummySPI/dummySPI/Dummy_SPI.vhf sub00/vhpl04 1495661030
+AR spi_slave logic H:/dummySPI/dummySPI/spi_slave.vhd sub00/vhpl03 1495661029
+EN counter NULL H:/dummySPI/dummySPI/Counter.vhd sub00/vhpl00 1495661026
+AR dummy_spi behavioral H:/dummySPI/dummySPI/Dummy_SPI.vhf sub00/vhpl05 1495661031
+AR counter logic H:/dummySPI/dummySPI/Counter.vhd sub00/vhpl01 1495661027
+EN spi_slave NULL H:/dummySPI/dummySPI/spi_slave.vhd sub00/vhpl02 1495661028

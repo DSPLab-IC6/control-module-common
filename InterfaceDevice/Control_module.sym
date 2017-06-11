@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Control_module">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2017-5-30T19:27:49</timestamp>
+    <pin polarity="Input" x="0" y="32" name="clk" />
+    <pin polarity="Input" x="0" y="96" name="ss_spi_busy" />
+    <pin polarity="Output" x="0" y="144" name="data_to_ss(7:0)" />
+    <pin polarity="Output" x="0" y="192" name="load_data_to_ss" />
+    <pin polarity="Input" x="0" y="240" name="data_from_ss(7:0)" />
+    <pin polarity="Output" x="0" y="288" name="request_data_from_ss" />
+    <pin polarity="Input" x="0" y="368" name="cd_spi_busy" />
+    <pin polarity="Output" x="0" y="464" name="load_data_to_cd" />
+    <pin polarity="Output" x="0" y="416" name="data_to_cd(7:0)" />
+    <pin polarity="Output" x="0" y="560" name="request_data_from_cd" />
+    <pin polarity="Input" x="0" y="512" name="data_from_cd(7:0)" />
+    <pin polarity="Output" x="0" y="640" name="spi_reset_n" />
+    <pin polarity="Output" x="752" y="96" name="module_number(3:0)" />
+    <pin polarity="Output" x="752" y="144" name="data_to_module(7:0)" />
+    <pin polarity="Output" x="752" y="192" name="module_tr_enable" />
+    <pin polarity="Input" x="752" y="240" name="data_from_module(7:0)" />
+    <pin polarity="Input" x="752" y="288" name="module_spi_busy" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="384" y="-20" type="symbol" />
+        <rect width="624" x="64" y="0" height="680" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="32" type="pin clk" />
+        <line x2="0" y1="32" y2="32" x1="64" />
+        <line x2="0" y1="96" y2="96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="96" type="pin ss_spi_busy" />
+        <line x2="64" y1="144" y2="144" x1="0" />
+        <rect width="64" x="0" y="132" height="24" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="240" y="144" type="pin data_to_ss(7:0)" />
+        <line x2="64" y1="192" y2="192" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="240" type="pin data_from_ss(7:0)" />
+        <line x2="0" y1="240" y2="240" x1="64" />
+        <rect width="64" x="0" y="228" height="24" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="252" y="192" type="pin load_data_to_ss" />
+        <line x2="64" y1="288" y2="288" x1="0" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="288" type="pin request_data_from_ss" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="368" type="pin cd_spi_busy" />
+        <line x2="0" y1="368" y2="368" x1="64" />
+        <line x2="64" y1="464" y2="464" x1="0" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="252" y="464" type="pin load_data_to_cd" />
+        <line x2="64" y1="416" y2="416" x1="0" />
+        <rect width="64" x="0" y="404" height="24" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="244" y="416" type="pin data_to_cd(7:0)" />
+        <line x2="64" y1="560" y2="560" x1="0" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="316" y="560" type="pin request_data_from_cd" />
+        <line x2="0" y1="512" y2="512" x1="64" />
+        <rect width="64" x="0" y="500" height="24" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="512" type="pin data_from_cd(7:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="200" y="640" type="pin spi_reset_n" />
+        <line x2="64" y1="640" y2="640" x1="0" />
+        <rect width="64" x="688" y="84" height="24" />
+        <line x2="752" y1="96" y2="96" x1="688" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="680" y="96" type="pin module_number(3:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="680" y="144" type="pin data_to_module(7:0)" />
+        <rect width="64" x="688" y="132" height="24" />
+        <line x2="752" y1="144" y2="144" x1="688" />
+        <line x2="752" y1="192" y2="192" x1="688" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="680" y="192" type="pin module_tr_enable" />
+        <line x2="688" y1="240" y2="240" x1="752" />
+        <rect width="64" x="688" y="228" height="24" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="432" y="240" type="pin data_from_module(7:0)" />
+        <line x2="688" y1="288" y2="288" x1="752" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="492" y="292" type="pin module_spi_busy" />
+    </graph>
+</symbol>

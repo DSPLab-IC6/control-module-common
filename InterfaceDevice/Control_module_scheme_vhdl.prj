@@ -1,0 +1,4 @@
+vhdl work "I:\diplom2017\InterfaceDevice\spi_slave.vhd"
+vhdl work "I:\diplom2017\InterfaceDevice\SPI_master.vhd"
+vhdl work "I:\diplom2017\InterfaceDevice\Control_module.vhd"
+vhdl work "I:\diplom2017\InterfaceDevice\Control_module_scheme.vhf"

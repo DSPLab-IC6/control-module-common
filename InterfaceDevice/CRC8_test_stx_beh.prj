@@ -1,0 +1,3 @@
+vhdl isim_temp "CRC_8.vhd"
+vhdl isim_temp "CRC8_counter.vhd"
+vhdl isim_temp "CRC8_test.vhd"

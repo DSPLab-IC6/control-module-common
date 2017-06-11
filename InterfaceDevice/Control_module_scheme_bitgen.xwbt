@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=I:\diplom2017\InterfaceDevice\Control_module_scheme.ncd
+OUTFILE=I:\diplom2017\InterfaceDevice\Control_module_scheme.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=I:\diplom2017\InterfaceDevice
+LICENSE=WebPack
+USER_INFO=211169423_0_0_153

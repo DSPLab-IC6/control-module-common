@@ -1,0 +1,29 @@
+Command line:
+   Dummy_SPI_Dummy_SPI_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49208
+
+Thu May 25 00:03:22 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 508.998 Meg
+
+ Total Signals          : 62
+ Total Nets             : 77
+ Total Signal Drivers   : 17
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 10
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 565
+Total Line Count : 46
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 508.998 Meg
+
+Thu May 25 00:04:36 2017
+

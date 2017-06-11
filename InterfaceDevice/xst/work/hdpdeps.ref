@@ -1,0 +1,41 @@
+V3 27
+FL F:/diplom2017/InterfaceDevice/spi_slave.vhd 2017/02/28.08:29:33 P.15xf
+FL H:/diplom2017/InterfaceDevice/Control_module.vhd 2017/05/28.11:13:27 P.15xf
+FL H:/diplom2017/InterfaceDevice/Control_module_scheme.vhf 2017/05/27.16:00:54 P.15xf
+FL H:/diplom2017/InterfaceDevice/CRC8_counter.vhd 2017/04/10.02:52:42 P.15xf
+EN work/CRC8_counter 1491782411 FL H:/diplom2017/InterfaceDevice/CRC8_counter.vhd \
+      PB ieee/std_logic_1164 1335251622 PB work/CRC_8 1491782410
+AR work/CRC8_counter/Logic 1491782412 \
+      FL H:/diplom2017/InterfaceDevice/CRC8_counter.vhd EN work/CRC8_counter 1491782411 \
+      PB work/CRC_8 1491782410
+FL H:/diplom2017/InterfaceDevice/CRC_8.vhd 2017/04/10.03:00:03 P.15xf
+PH work/CRC_8 1491782409 FL H:/diplom2017/InterfaceDevice/CRC_8.vhd \
+      PB ieee/std_logic_1164 1335251622
+PB work/CRC_8 1491782410 \
+      FL H:/diplom2017/InterfaceDevice/CRC_8.vhd PH work/CRC_8 1491782409
+FL H:/diplom2017/InterfaceDevice/SPI_master.vhd 2017/05/26.02:55:02 P.15xf
+FL H:/diplom2017/InterfaceDevice/spi_slave.vhd 2017/03/26.23:12:29 P.15xf
+FL I:/diplom2017/InterfaceDevice/Control_module.vhd 2017/06/01.14:01:33 P.15xf
+EN work/Control_module 1496314895 \
+      FL I:/diplom2017/InterfaceDevice/Control_module.vhd PB ieee/std_logic_1164 1335251622
+AR work/Control_module/Logic 1496314896 \
+      FL I:/diplom2017/InterfaceDevice/Control_module.vhd EN work/Control_module 1496314895
+FL I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf 2017/05/27.16:00:54 P.15xf
+EN work/Control_module_scheme 1495999560 \
+      FL I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629
+AR work/Control_module_scheme/BEHAVIORAL 1495999561 \
+      FL I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf \
+      EN work/Control_module_scheme 1495999560 CP SPI_slave CP SPI_master \
+      CP Control_module
+FL I:/diplom2017/InterfaceDevice/SPI_master.vhd 2017/05/26.02:55:02 P.15xf
+EN work/SPI_master 1495999556 FL I:/diplom2017/InterfaceDevice/SPI_master.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623
+AR work/SPI_master/Logic 1495999557 \
+      FL I:/diplom2017/InterfaceDevice/SPI_master.vhd EN work/SPI_master 1495999556
+FL I:/diplom2017/InterfaceDevice/spi_slave.vhd 2017/03/26.23:12:29 P.15xf
+EN work/SPI_Slave 1495999554 FL I:/diplom2017/InterfaceDevice/spi_slave.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/SPI_Slave/logic 1495999555 \
+      FL I:/diplom2017/InterfaceDevice/spi_slave.vhd EN work/SPI_Slave 1495999554

@@ -1,0 +1,4 @@
+vhdl work "spi_slave.vhd"
+vhdl work "Counter.vhd"
+vhdl work "Dummy_SPI.vhf"
+vhdl work "Dummy_SPI_test.vhd"

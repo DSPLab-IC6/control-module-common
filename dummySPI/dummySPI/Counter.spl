@@ -1,0 +1,8 @@
+[Inputs]
+clk
+spi_busy
+reset_n
+[Outputs]
+tx_data_load_en
+=tx_data[7:0]=
+[BiDir]

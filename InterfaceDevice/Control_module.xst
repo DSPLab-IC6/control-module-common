@@ -1,0 +1,5 @@
+set -tmpdir "I:/diplom2017/InterfaceDevice/xst/projnav.tmp"
+set -xsthdpdir "I:/diplom2017/InterfaceDevice/xst"
+elaborate
+-ifn Control_module.prj
+-ifmt mixed

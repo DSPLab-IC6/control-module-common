@@ -1,0 +1,36 @@
+select figure at 1930 1259 8 -branches -sn=1
+add instance Dummy_SPI 416 1024 R0 -sn=1
+select figure at 528 1021 8 -branches -sn=1
+move instance at 416 1024 to 288 992 R0 -keepConn -sn=1
+delete selection -sn=1
+select figure at 783 1472 8 -branches -sn=1
+select figure at 764 1489 8 -branches -sn=1
+select figure at 764 1489 8 -branches -all -sn=1
+select figure at 1775 1327 8 -branches -sn=1
+select figure at 1775 1327 8 -branches -all -sn=1
+set attr BA|XLXI_4|InstName value Counter -sn=1
+select figure at 1026 1327 8 -branches -sn=1
+select figure at 1026 1327 8 -branches -all -sn=1
+set attr BA|XLXI_2|InstName value SPI_slave -sn=1
+select figure at 662 1585 8 -branches -sn=1
+select figure at 701 1493 8 -branches -sn=1
+select figure at 701 1493 8 -branches -all -sn=1
+select figure at 641 1660 8 -branches -sn=1
+select figure at 1192 1640 8 -branches -sn=1
+BeginGroup
+add wire 1200 1520 1232 1520 -sn=1
+add iomarker 1232 1520 0 Output Unknown -sn=1
+EndGroup
+select figure at 1262 1517 8 -branches -sn=1
+select figure at 1253 1532 8 -branches -sn=1
+move iomarker at 1232 1520 to 1504 1648 R0 -keepConn -sn=1
+select figure at 1267 1737 8 -branches -sn=1
+BeginGroup
+add wire 1200 1568 1232 1568 -sn=1
+add iomarker 1232 1568 0 Input Unknown -sn=1
+EndGroup
+select figure at 1303 1580 8 -branches -sn=1
+move iomarker at 1232 1568 to 1248 1888 R0 -keepConn -sn=1
+delete selection -sn=1
+select figure at 1125 1657 8 -branches -sn=1
+select figure at 1132 1681 8 -branches -sn=1

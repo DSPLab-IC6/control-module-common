@@ -1,0 +1,9 @@
+MODULE Control_module_scheme
+	SUBMODULE Control_module
+		INSTANCE Control_module_core
+	SUBMODULE SPI_slave
+		INSTANCE CD_SPI_slave
+	SUBMODULE SPI_slave
+		INSTANCE State_SPI_slave
+	SUBMODULE SPI_master
+		INSTANCE CM_SPI_master

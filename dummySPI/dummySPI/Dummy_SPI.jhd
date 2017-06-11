@@ -1,0 +1,5 @@
+MODULE Dummy_SPI
+	SUBMODULE SPI_slave
+		INSTANCE SPI_slave_ins
+	SUBMODULE Counter
+		INSTANCE Counter_ins

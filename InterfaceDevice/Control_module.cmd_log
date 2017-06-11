@@ -1,0 +1,14 @@
+vhdtdtfi -prj InterfaceDevice -o H:/diplom2017/InterfaceDevice/Control_module.vhi -module Control_module -template H:/Xilinx/14.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Control_module.vhd 
+vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl -module Control_module -template H:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Control_module.spl H:/diplom2017/InterfaceDevice/Control_module.sym 
+vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl -module Control_module -template H:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_module.spl H:/diplom2017/InterfaceDevice/Control_module.sym 
+vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl -module Control_module -template H:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl -module Control_module -template H:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_module.spl H:/diplom2017/InterfaceDevice/Control_module.sym 
+vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl -module Control_module -template H:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_module.spl H:/diplom2017/InterfaceDevice/Control_module.sym 
+vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl -module Control_module -template H:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_module.spl H:/diplom2017/InterfaceDevice/Control_module.sym 
+vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl -module Control_module -template I:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_module.spl I:/diplom2017/InterfaceDevice/Control_module.sym 

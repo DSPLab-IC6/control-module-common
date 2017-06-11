@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Control_module_scheme</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">H:/diplom2017/InterfaceDevice/Control_module_scheme.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Control_module_scheme/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">H:/diplom2017/InterfaceDevice/Control_module_scheme.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Control_module</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">H:/diplom2017/InterfaceDevice/Control_module.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">I:/diplom2017/InterfaceDevice/Control_module.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Control_module/Logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">H:/diplom2017/InterfaceDevice/Control_module.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">I:/diplom2017/InterfaceDevice/Control_module.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/SPI_master</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">H:/diplom2017/InterfaceDevice/SPI_master.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">I:/diplom2017/InterfaceDevice/SPI_master.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/SPI_master/Logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">H:/diplom2017/InterfaceDevice/SPI_master.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">I:/diplom2017/InterfaceDevice/SPI_master.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/SPI_slave</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">H:/diplom2017/InterfaceDevice/spi_slave.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">I:/diplom2017/InterfaceDevice/spi_slave.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/SPI_slave/Logic</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">H:/diplom2017/InterfaceDevice/spi_slave.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">I:/diplom2017/InterfaceDevice/spi_slave.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">I:/diplom2017/InterfaceDevice/spi_slave.vhd</arg>&quot; line <arg fmt="%d" index="2">57</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;tx_data&gt;, &lt;rx_buffer&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">I:/diplom2017/InterfaceDevice/SPI_master.vhd</arg>&quot; line <arg fmt="%d" index="2">67</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;sclk_int&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">clk_ratio</arg>&gt; in unit &lt;<arg fmt="%s" index="2">SPI_master</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">I:/diplom2017/InterfaceDevice/Control_module.vhd</arg>&quot; line <arg fmt="%d" index="2">137</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;state&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">I:/diplom2017/InterfaceDevice/Control_module.vhd</arg>&quot; line <arg fmt="%d" index="2">144</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;state&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1608" delta="old" >Relative priorities of control signals on register &lt;<arg fmt="%s" index="1">tx_buffer</arg>&gt; differ from those commonly found in the selected device family. This will result in additional logic around the register.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">8</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">rx_data</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="736" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Mtrien_miso</arg>&gt; created at line <arg fmt="%d" index="3">65</arg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="old" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">module_spi_busy</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">module_tr_enable</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">module_number</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">data_to_module</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">data_from_module</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">spi_reset</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">state_code</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">module_addr</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">internal_state</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">cmd_result</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">cmd_crc</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">8</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">data_to_cd</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">slave_index_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">CM_SPI_master</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;slave_index_1&gt; &lt;slave_index_2&gt; &lt;slave_index_3&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">state_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">Control_module_core</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">sclk_int</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Mtrien_mosi</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">3</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">5</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">6</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">7</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">state_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Control_module_core</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tx_buffer_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tx_buffer_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tx_buffer_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tx_buffer_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tx_buffer_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tx_buffer_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tx_buffer_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tx_buffer_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">latch_data</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ss_n_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">state_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">slave_index_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Mtridata_mosi</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cmd_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_core</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cmd_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_core</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cmd_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_core</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cmd_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_core</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="old" >Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">Mtrien_miso</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Mtrien_mosi</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">clk_count_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Mtrien_mosi</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">CM_SPI_master</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cmd_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cmd_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cmd_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cmd_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">state_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">Control_module</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">state_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Control_module</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">LPM_LATCH_4</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;6&gt; &lt;5&gt; &lt;4&gt; &lt;3&gt; &lt;2&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LPM_LATCH_4</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/slave_index_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Control_module_scheme</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/slave_index_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Control_module_scheme</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/slave_index_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Control_module_scheme</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/slave_index_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Control_module_scheme</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_data_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_data_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_data_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/busy</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_buffer_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_buffer_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_buffer_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_buffer_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_buffer_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_buffer_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_buffer_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/rx_buffer_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1294" delta="new" >Latch &lt;<arg fmt="%s" index="1">CD_SPI_slave/Mtrien_miso</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/ss_n_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">13 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;CM_SPI_master/ss_n_8&gt; &lt;CM_SPI_master/ss_n_14&gt; &lt;CM_SPI_master/ss_n_7&gt; &lt;CM_SPI_master/ss_n_13&gt; &lt;CM_SPI_master/ss_n_6&gt; &lt;CM_SPI_master/ss_n_12&gt; &lt;CM_SPI_master/ss_n_5&gt; &lt;CM_SPI_master/ss_n_11&gt; &lt;CM_SPI_master/ss_n_4&gt; &lt;CM_SPI_master/ss_n_10&gt; &lt;CM_SPI_master/ss_n_3&gt; &lt;CM_SPI_master/ss_n_2&gt; &lt;CM_SPI_master/ss_n_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/clk_toggles_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/clk_toggles_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/clk_toggles_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/tx_buffer_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/tx_buffer_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/tx_buffer_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/tx_buffer_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/tx_buffer_4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/tx_buffer_5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/tx_buffer_6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">CM_SPI_master/clk_toggles_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">CM_SPI_master/Mtrien_mosi</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Control_module_scheme</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="741" delta="new" >HDL ADVISOR - A <arg fmt="%d" index="1">6</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">CD_SPI_slave/tx_buffer_7</arg>&gt; and currently occupies <arg fmt="%d" index="3">6</arg> logic cells (<arg fmt="%d" index="4">3</arg> slices). Removing the set/reset logic would take advantage of SRL<arg fmt="%d" index="5">16</arg> (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+</messages>
+

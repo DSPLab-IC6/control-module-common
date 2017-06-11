@@ -1,0 +1,5 @@
+vhdl work "spi_slave.vhd"
+vhdl work "SPI_master.vhd"
+vhdl work "Control_module.vhd"
+vhdl work "Control_module_scheme.vhf"
+vhdl work "Control_module_test.vhd"

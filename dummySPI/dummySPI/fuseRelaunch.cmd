@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "H:/dummySPI/dummySPI/Dummy_SPI_Dummy_SPI_sch_tb_isim_beh.exe" -prj "H:/dummySPI/dummySPI/Dummy_SPI_Dummy_SPI_sch_tb_beh.prj" "work.Dummy_SPI_Dummy_SPI_sch_tb" 

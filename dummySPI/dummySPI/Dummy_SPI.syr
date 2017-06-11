@@ -1,0 +1,551 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Dummy_SPI.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Dummy_SPI.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Dummy_SPI"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : Dummy_SPI
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "H:/dummySPI/dummySPI/Counter.vhd" in Library work.
+Architecture logic of Entity counter is up to date.
+Compiling vhdl file "H:/dummySPI/dummySPI/spi_slave.vhd" in Library work.
+Entity <spi_slave> compiled.
+Entity <spi_slave> (Architecture <logic>) compiled.
+Compiling vhdl file "H:/dummySPI/dummySPI/Dummy_SPI.vhf" in Library work.
+Architecture behavioral of Entity dummy_spi is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Dummy_SPI> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Counter> in library <work> (architecture <logic>).
+
+Analyzing hierarchy for entity <SPI_slave> in library <work> (architecture <logic>) with generics.
+	cpha = '0'
+	cpol = '0'
+	data_width = 8
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Dummy_SPI> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "H:/dummySPI/dummySPI/Dummy_SPI.vhf" line 71: Unconnected output port 'tx_data_load_en' of component 'Counter'.
+Entity <Dummy_SPI> analyzed. Unit <Dummy_SPI> generated.
+
+Analyzing Entity <Counter> in library <work> (Architecture <logic>).
+Entity <Counter> analyzed. Unit <Counter> generated.
+
+Analyzing generic Entity <SPI_slave> in library <work> (Architecture <logic>).
+	cpha = '0'
+	cpol = '0'
+	data_width = 8
+WARNING:Xst:819 - "H:/dummySPI/dummySPI/spi_slave.vhd" line 57: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <tx_data>, <rx_buffer>
+Entity <SPI_slave> analyzed. Unit <SPI_slave> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Counter>.
+    Related source file is "H:/dummySPI/dummySPI/Counter.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <tx_data_load_en> is never assigned. Tied to value 0.
+    Found 8-bit register for signal <tx_data>.
+    Found 32-bit up counter for signal <bytes_count>.
+    Found 32-bit comparator greater for signal <bytes_count$cmp_gt0000> created at line 49.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Counter> synthesized.
+
+
+Synthesizing Unit <SPI_slave>.
+    Related source file is "H:/dummySPI/dummySPI/spi_slave.vhd".
+INFO:Xst:1608 - Relative priorities of control signals on register <tx_buffer> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 8-bit latch for signal <rx_data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:736 - Found 1-bit latch for signal <Mtrien_miso> created at line 65. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 1-bit tristate buffer for signal <miso>.
+    Found 1-bit register for signal <Mtridata_miso> created at line 65.
+    Found 8-bit register for signal <rx_buffer>.
+    Found 8-bit register for signal <tx_buffer>.
+    Summary:
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Tristate(s).
+Unit <SPI_slave> synthesized.
+
+
+Synthesizing Unit <Dummy_SPI>.
+    Related source file is "H:/dummySPI/dummySPI/Dummy_SPI.vhf".
+Unit <Dummy_SPI> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 11
+ 1-bit register                                        : 9
+ 8-bit register                                        : 2
+# Latches                                              : 2
+ 1-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Latches                                              : 2
+ 1-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <SPI_slave_ins/Mtrien_miso> (without init value) has a constant value of 0 in block <Dummy_SPI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <SPI_slave_ins/Mtrien_miso> of sequential type is unconnected in block <Dummy_SPI>.
+
+Optimizing unit <Dummy_SPI> ...
+
+Optimizing unit <Counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Dummy_SPI, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Dummy_SPI.ngr
+Top Level Output File Name         : Dummy_SPI
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 130
+#      GND                         : 1
+#      INV                         : 4
+#      LUT2                        : 48
+#      LUT3                        : 1
+#      LUT4                        : 5
+#      MUXCY                       : 38
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 65
+#      FDC                         : 29
+#      FDCE_1                      : 8
+#      FDCPE                       : 8
+#      FDE                         : 1
+#      FDE_1                       : 8
+#      FDP                         : 3
+#      LD                          : 8
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 2
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       36  out of   4656     0%  
+ Number of Slice Flip Flops:             57  out of   9312     0%  
+ Number of 4 input LUTs:                 58  out of   9312     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  13  out of    232     5%  
+    IOB Flip Flops:                       8
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SS_N                               | IBUF+BUFG              | 48    |
+SCLK                               | BUFGP                  | 17    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------+--------------------------------+-------+
+Control Signal                                                         | Buffer(FF name)                | Load  |
+-----------------------------------------------------------------------+--------------------------------+-------+
+Counter_ins/reset_n_inv(XST_GND:G)                                     | NONE(Counter_ins/bytes_count_0)| 40    |
+SPI_slave_ins/tx_buffer_0_and0000(SPI_slave_ins/tx_buffer_0_and00001:O)| NONE(SPI_slave_ins/tx_buffer_0)| 1     |
+SPI_slave_ins/tx_buffer_0_or0000(SPI_slave_ins/tx_buffer_0_or00001:O)  | NONE(SPI_slave_ins/tx_buffer_0)| 1     |
+SPI_slave_ins/tx_buffer_1_and0000(SPI_slave_ins/tx_buffer_1_and00001:O)| NONE(SPI_slave_ins/tx_buffer_1)| 1     |
+SPI_slave_ins/tx_buffer_1_or0000(SPI_slave_ins/tx_buffer_1_or00001:O)  | NONE(SPI_slave_ins/tx_buffer_1)| 1     |
+SPI_slave_ins/tx_buffer_2_and0000(SPI_slave_ins/tx_buffer_2_and00001:O)| NONE(SPI_slave_ins/tx_buffer_2)| 1     |
+SPI_slave_ins/tx_buffer_2_or0000(SPI_slave_ins/tx_buffer_2_or00001:O)  | NONE(SPI_slave_ins/tx_buffer_2)| 1     |
+SPI_slave_ins/tx_buffer_3_and0000(SPI_slave_ins/tx_buffer_3_and00001:O)| NONE(SPI_slave_ins/tx_buffer_3)| 1     |
+SPI_slave_ins/tx_buffer_3_or0000(SPI_slave_ins/tx_buffer_3_or00001:O)  | NONE(SPI_slave_ins/tx_buffer_3)| 1     |
+SPI_slave_ins/tx_buffer_4_and0000(SPI_slave_ins/tx_buffer_4_and00001:O)| NONE(SPI_slave_ins/tx_buffer_4)| 1     |
+SPI_slave_ins/tx_buffer_4_or0000(SPI_slave_ins/tx_buffer_4_or00001:O)  | NONE(SPI_slave_ins/tx_buffer_4)| 1     |
+SPI_slave_ins/tx_buffer_5_and0000(SPI_slave_ins/tx_buffer_5_and00001:O)| NONE(SPI_slave_ins/tx_buffer_5)| 1     |
+SPI_slave_ins/tx_buffer_5_or0000(SPI_slave_ins/tx_buffer_5_or00001:O)  | NONE(SPI_slave_ins/tx_buffer_5)| 1     |
+SPI_slave_ins/tx_buffer_6_and0000(SPI_slave_ins/tx_buffer_6_and00001:O)| NONE(SPI_slave_ins/tx_buffer_6)| 1     |
+SPI_slave_ins/tx_buffer_6_or0000(SPI_slave_ins/tx_buffer_6_or00001:O)  | NONE(SPI_slave_ins/tx_buffer_6)| 1     |
+SPI_slave_ins/tx_buffer_7_and0000(SPI_slave_ins/tx_buffer_7_and00001:O)| NONE(SPI_slave_ins/tx_buffer_7)| 1     |
+SPI_slave_ins/tx_buffer_7_or0000(SPI_slave_ins/tx_buffer_7_or00001:O)  | NONE(SPI_slave_ins/tx_buffer_7)| 1     |
+-----------------------------------------------------------------------+--------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.041ns (Maximum Frequency: 142.023MHz)
+   Minimum input arrival time before clock: 3.859ns
+   Maximum output required time after clock: 4.114ns
+   Maximum combinational path delay: 6.544ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SCLK'
+  Clock period: 1.162ns (frequency: 860.622MHz)
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Delay:               1.162ns (Levels of Logic = 0)
+  Source:            SPI_slave_ins/tx_buffer_7 (FF)
+  Destination:       SPI_slave_ins/Mtridata_miso (FF)
+  Source Clock:      SCLK falling
+  Destination Clock: SCLK falling
+
+  Data Path: SPI_slave_ins/tx_buffer_7 to SPI_slave_ins/Mtridata_miso
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:C->Q            2   0.514   0.380  SPI_slave_ins/tx_buffer_7 (SPI_slave_ins/tx_buffer_7)
+     FDCPE:D                   0.268          SPI_slave_ins/tx_buffer_0
+    ----------------------------------------
+    Total                      1.162ns (0.782ns logic, 0.380ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SS_N'
+  Clock period: 7.041ns (frequency: 142.023MHz)
+  Total number of paths / destination ports: 14536 / 40
+-------------------------------------------------------------------------
+Delay:               7.041ns (Levels of Logic = 41)
+  Source:            Counter_ins/bytes_count_8 (FF)
+  Destination:       Counter_ins/bytes_count_31 (FF)
+  Source Clock:      SS_N rising
+  Destination Clock: SS_N rising
+
+  Data Path: Counter_ins/bytes_count_8 to Counter_ins/bytes_count_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  Counter_ins/bytes_count_8 (Counter_ins/bytes_count_8)
+     LUT4:I0->O            1   0.612   0.000  Counter_ins/Mcompar_bytes_count_cmp_gt0000_lut<0> (Counter_ins/Mcompar_bytes_count_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<0> (Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<1> (Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<2> (Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<3> (Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<4> (Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<5> (Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<5>)
+     MUXCY:CI->O          33   0.051   1.142  Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<6> (Counter_ins/Mcompar_bytes_count_cmp_gt0000_cy<6>)
+     LUT2:I1->O            1   0.612   0.000  Counter_ins/Mcount_bytes_count_lut<0> (Counter_ins/Mcount_bytes_count_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Counter_ins/Mcount_bytes_count_cy<0> (Counter_ins/Mcount_bytes_count_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<1> (Counter_ins/Mcount_bytes_count_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<2> (Counter_ins/Mcount_bytes_count_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<3> (Counter_ins/Mcount_bytes_count_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<4> (Counter_ins/Mcount_bytes_count_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<5> (Counter_ins/Mcount_bytes_count_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<6> (Counter_ins/Mcount_bytes_count_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<7> (Counter_ins/Mcount_bytes_count_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<8> (Counter_ins/Mcount_bytes_count_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<9> (Counter_ins/Mcount_bytes_count_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Counter_ins/Mcount_bytes_count_cy<10> (Counter_ins/Mcount_bytes_count_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<11> (Counter_ins/Mcount_bytes_count_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<12> (Counter_ins/Mcount_bytes_count_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<13> (Counter_ins/Mcount_bytes_count_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<14> (Counter_ins/Mcount_bytes_count_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<15> (Counter_ins/Mcount_bytes_count_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<16> (Counter_ins/Mcount_bytes_count_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<17> (Counter_ins/Mcount_bytes_count_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<18> (Counter_ins/Mcount_bytes_count_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<19> (Counter_ins/Mcount_bytes_count_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<20> (Counter_ins/Mcount_bytes_count_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<21> (Counter_ins/Mcount_bytes_count_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<22> (Counter_ins/Mcount_bytes_count_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<23> (Counter_ins/Mcount_bytes_count_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<24> (Counter_ins/Mcount_bytes_count_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<25> (Counter_ins/Mcount_bytes_count_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<26> (Counter_ins/Mcount_bytes_count_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<27> (Counter_ins/Mcount_bytes_count_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<28> (Counter_ins/Mcount_bytes_count_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<29> (Counter_ins/Mcount_bytes_count_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Counter_ins/Mcount_bytes_count_cy<30> (Counter_ins/Mcount_bytes_count_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  Counter_ins/Mcount_bytes_count_xor<31> (Counter_ins/Mcount_bytes_count31)
+     FDC:D                     0.268          Counter_ins/bytes_count_31
+    ----------------------------------------
+    Total                      7.041ns (5.367ns logic, 1.674ns route)
+                                       (76.2% logic, 23.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SCLK'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.859ns (Levels of Logic = 2)
+  Source:            SS_N (PAD)
+  Destination:       SPI_slave_ins/Mtridata_miso (FF)
+  Destination Clock: SCLK falling
+
+  Data Path: SS_N to SPI_slave_ins/Mtridata_miso
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.106   0.908  SS_N_IBUF (Counter_ins/spi_busy_inv1)
+     INV:I->O             10   0.612   0.750  Counter_ins/spi_busy_inv_LUT1_INV_0 (Counter_ins/spi_busy_inv_LUT1)
+     FDE:CE                    0.483          SPI_slave_ins/Mtridata_miso
+    ----------------------------------------
+    Total                      3.859ns (2.201ns logic, 1.658ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SCLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            SPI_slave_ins/Mtridata_miso (FF)
+  Destination:       MISO (PAD)
+  Source Clock:      SCLK falling
+
+  Data Path: SPI_slave_ins/Mtridata_miso to MISO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.514   0.357  SPI_slave_ins/Mtridata_miso (SPI_slave_ins/Mtridata_miso)
+     OBUF:I->O                 3.169          MISO_OBUF (MISO)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SS_N'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            SPI_slave_ins/rx_data_7 (LATCH)
+  Destination:       RX_DATA<7> (PAD)
+  Source Clock:      SS_N falling
+
+  Data Path: SPI_slave_ins/rx_data_7 to RX_DATA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.357  SPI_slave_ins/rx_data_7 (SPI_slave_ins/rx_data_7)
+     OBUF:I->O                 3.169          RX_DATA_7_OBUF (RX_DATA<7>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.544ns (Levels of Logic = 3)
+  Source:            SS_N (PAD)
+  Destination:       BUSY (PAD)
+
+  Data Path: SS_N to BUSY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.106   0.908  SS_N_IBUF (Counter_ins/spi_busy_inv1)
+     INV:I->O             10   0.612   0.750  Counter_ins/spi_busy_inv_LUT1_INV_0 (Counter_ins/spi_busy_inv_LUT1)
+     OBUF:I->O                 3.169          BUSY_OBUF (BUSY)
+    ----------------------------------------
+    Total                      6.544ns (4.887ns logic, 1.658ns route)
+                                       (74.7% logic, 25.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.34 secs
+ 
+--> 
+
+Total memory usage is 268740 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
