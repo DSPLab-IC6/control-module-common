@@ -12,6 +12,7 @@ load_data_to_cd
 request_data_from_ss
 load_data_to_ss
 module_tr_enable
+request_data_from_module
 spi_reset_n
 =data_to_cd[7:0]=
 =data_to_ss[7:0]=

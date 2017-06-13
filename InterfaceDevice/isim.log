@@ -1,5 +1,5 @@
 ISim log file
-Running: I:\diplom2017\InterfaceDevice\Control_module_scheme_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb I:/diplom2017/InterfaceDevice/Control_module_scheme_test_isim_beh.wdb 
+Running: I:\diplom2017\InterfaceDevice\CRC8_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb I:/diplom2017/InterfaceDevice/CRC8_test_isim_beh.wdb 
 ISim P.15xf (signature 0xc3576ebc)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -8,6 +8,113 @@ This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+ERROR: Index -4 out of bound 3 downto 0. 
+ERROR: In process CRC8_counter.vhd:main 
+ 
+INFO: Simulator is stopped.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 50 us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
 # run 50 us
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.

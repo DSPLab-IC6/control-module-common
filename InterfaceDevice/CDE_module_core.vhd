@@ -151,7 +151,7 @@ BEGIN
 						 
 						IF reg_value_crc /= CRC8(reg_value) THEN
 							state <= get_state_code(bad_crc_error);
-							byte_received
+							--byte_received
 							-- TODO: check it
 						END IF;
 					END IF;

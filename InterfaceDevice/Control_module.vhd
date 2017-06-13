@@ -55,11 +55,12 @@ ENTITY Control_module IS
 		load_data_to_ss 		: OUT  STD_LOGIC := '1';
 		ss_spi_busy				: IN   STD_LOGIC;
 		
-		module_spi_busy		: IN	 STD_LOGIC;
-		module_number			: OUT	 STD_LOGIC_VECTOR(slave_addr_width - 1 DOWNTO 0) := (OTHERS => '0');
-		module_tr_enable		: OUT  STD_LOGIC := '1';
-		data_to_module   		: OUT  STD_LOGIC_VECTOR(data_width - 1 DOWNTO 0) := (OTHERS => '0');
-		data_from_module 		: IN   STD_LOGIC_VECTOR(data_width - 1 DOWNTO 0);
+		module_spi_busy			 : IN	 STD_LOGIC;
+		module_number				 : OUT	 STD_LOGIC_VECTOR(slave_addr_width - 1 DOWNTO 0) := (OTHERS => '0');
+		module_tr_enable			 : OUT  STD_LOGIC := '1';
+		data_to_module   			 : OUT  STD_LOGIC_VECTOR(data_width - 1 DOWNTO 0) := (OTHERS => '0');
+		data_from_module 			 : IN   STD_LOGIC_VECTOR(data_width - 1 DOWNTO 0);
+		request_data_from_module : OUT  STD_LOGIC := '1';
 		
 		spi_reset_n 			: OUT  STD_LOGIC := '1';
 		clk 					   : IN STD_LOGIC
@@ -86,7 +87,7 @@ ENTITY Control_module IS
 			WHEN cmd_proc_busy => state_code := X"2B";
 			
 			WHEN unknown_cmd_error => state_code := X"3E";
-			WHEN crc_error   		  => state_code := X"4E";
+			WHEN bad_crc_error     => state_code := X"4E";
 			WHEN unknown_reg_error => state_code := X"5E";
 			
 			WHEN success => state_code := X"7C";
@@ -131,9 +132,12 @@ BEGIN
 	
 	load_data_to_ss <= '1';
 	request_data_from_ss <= '1';
-			
+	
+	module_tr_enable <= '1';
+	request_data_from_module <= '1';
+	
 	data_to_ss <= get_state_code(state);
-					
+			
 	main: PROCESS(clk, cd_spi_busy, ss_spi_busy)
 		VARIABLE cmd : COMMAND_T := nop;
 		VARIABLE byte_received_count : INTEGER := 0;
@@ -224,8 +228,10 @@ BEGIN
 								byte_received_count := 0;
 								
 								state <= ready;
-								internal_state <= in_ready;
 							END IF;
+							
+						WHEN OTHERS =>
+							NULL;
 					END CASE;
 				-- Command processing --
 

@@ -14,7 +14,7 @@
 
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
-USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 
 
 ENTITY SPI_master IS
@@ -38,8 +38,10 @@ ENTITY SPI_master IS
 		rx_data : OUT STD_LOGIC_VECTOR(data_width - 1 DOWNTO 0);
 		tx_data : IN  STD_LOGIC_VECTOR(data_width - 1 DOWNTO 0);
 
-		tr_enable : IN STD_LOGIC;
-		slave_addr: IN STD_LOGIC_VECTOR(slave_addr_width - 1 DOWNTO 0) := (OTHERS => '0');
+		tr_enable       : IN STD_LOGIC;
+		rx_data_request : IN STD_LOGIC;
+		
+		slave_addr : IN STD_LOGIC_VECTOR(slave_addr_width - 1 DOWNTO 0) := (OTHERS => '0');
 		
 		busy : OUT STD_LOGIC; 
 		
@@ -54,28 +56,29 @@ ARCHITECTURE Logic OF SPI_master IS
 	TYPE MACHINE_T IS (ready, transaction);
 
 	SIGNAL state       : MACHINE_T; 
-	SIGNAL slave_index : INTEGER; 
+	SIGNAL slave_index : INTEGER := 0; 
 	SIGNAL clk_ratio   : INTEGER;
-	SIGNAL clk_count   : INTEGER;  
-	SIGNAL clk_toggles : INTEGER RANGE 0 TO data_width * 2 + 1; 
+	SIGNAL clk_count   : INTEGER := 0;  
+	SIGNAL clk_toggles : INTEGER RANGE 0 TO data_width * 2; 
 	SIGNAL latch_data  : STD_LOGIC; 
 	SIGNAL rx_buffer   : STD_LOGIC_VECTOR(data_width - 1 DOWNTO 0) := (OTHERS => '0');
 	SIGNAL tx_buffer   : STD_LOGIC_VECTOR(data_width - 1 DOWNTO 0) := (OTHERS => '0');
 	
 	SIGNAL slave_number : INTEGER RANGE 0 TO slaves_count;
-BEGIN				
+BEGIN			
+	slave_number <= TO_INTEGER(unsigned(slave_addr));
+						
 	main: PROCESS(clk, reset_n)
 	BEGIN
 		sclk <= sclk_int;
-		slave_number <= CONV_INTEGER(unsigned(slave_addr));
 		
 		IF (reset_n = '0') THEN
 			busy <= '1';
 			mosi <= 'Z';
 			
 			ss_n <= (OTHERS => '1');
-			rx_buffer <= (OTHERS => '1');
-			tx_buffer <= (OTHERS => '1');
+			rx_buffer <= (OTHERS => '0');
+			tx_buffer <= (OTHERS => '0');
 			rx_data <= (OTHERS => '0');
 			
 			state <= ready;
@@ -95,7 +98,7 @@ BEGIN
 							slave_index <= 0;
 						END IF;
 					
-						IF (clk_div = 0) THEN
+						IF (clk_div <= 0) THEN
 							clk_ratio <= 1;
 							clk_count <= 1;
 						ELSE
@@ -138,8 +141,11 @@ BEGIN
 							busy <= '0';
 							mosi <= 'Z';
 							ss_n <= (OTHERS => '1'); 
-							rx_data <= rx_buffer;
 							state <= ready;
+							
+							IF (rx_data_request = '1') THEN
+								rx_data <= rx_buffer;
+							END IF;
 						END IF;
 					ELSE -- clk_count /= clk_ratio
 						clk_count <= clk_count + 1;

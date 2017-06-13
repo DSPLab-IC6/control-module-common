@@ -1,12 +1,12 @@
 PH crc_8 NULL H:/diplom2017/InterfaceDevice/CRC_8.vhd sub00/vhpl04 1491782409
-EN spi_master NULL I:/diplom2017/InterfaceDevice/SPI_master.vhd sub00/vhpl02 1495999556
-AR spi_master logic I:/diplom2017/InterfaceDevice/SPI_master.vhd sub00/vhpl03 1495999557
+EN spi_master NULL I:/diplom2017/InterfaceDevice/SPI_master.vhd sub00/vhpl02 1497252918
+AR spi_master logic I:/diplom2017/InterfaceDevice/SPI_master.vhd sub00/vhpl03 1497252919
 AR spi_slave logic I:/diplom2017/InterfaceDevice/spi_slave.vhd sub00/vhpl01 1495999555
-EN control_module NULL I:/diplom2017/InterfaceDevice/Control_module.vhd sub00/vhpl08 1496314895
+EN control_module NULL I:/diplom2017/InterfaceDevice/Control_module.vhd sub00/vhpl08 1497253344
 EN crc8_counter NULL H:/diplom2017/InterfaceDevice/CRC8_counter.vhd sub00/vhpl06 1491782411
 AR control_module_scheme behavioral I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf sub00/vhpl11 1495999561
 AR crc8_counter logic H:/diplom2017/InterfaceDevice/CRC8_counter.vhd sub00/vhpl07 1491782412
 EN control_module_scheme NULL I:/diplom2017/InterfaceDevice/Control_module_scheme.vhf sub00/vhpl10 1495999560
 PB crc_8 crc_8 H:/diplom2017/InterfaceDevice/CRC_8.vhd sub00/vhpl05 1491782410
-AR control_module logic I:/diplom2017/InterfaceDevice/Control_module.vhd sub00/vhpl09 1496314896
+AR control_module logic I:/diplom2017/InterfaceDevice/Control_module.vhd sub00/vhpl09 1497253345
 EN spi_slave NULL I:/diplom2017/InterfaceDevice/spi_slave.vhd sub00/vhpl00 1495999554

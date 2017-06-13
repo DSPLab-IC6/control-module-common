@@ -2,6 +2,7 @@
 clk
 miso
 tr_enable
+rx_data_request
 reset_n
 =tx_data[7:0]=
 =slave_addr[3:0]=

@@ -33,7 +33,7 @@ USE ieee.std_logic_1164.ALL;
 --USE ieee.numeric_std.ALL;
  
 ENTITY CRC8_test IS
-	GENERIC (data_width : integer := 16);
+	GENERIC (data_width : integer := 32);
 END CRC8_test;
  
 ARCHITECTURE behavior OF CRC8_test IS 
@@ -86,24 +86,28 @@ BEGIN
       wait for 20 ns;	
 
       wait for clk_period*5;
-		
-		message <= "1011101111100001";	-- crc8 = "01111011"
-		
-		wait for clk_period*5;
+			
+--		message <= X"00000000";		-- crc8 = X"00"
+--		wait for clk_period * 5;
 
-		message <= "1001101111100111";	-- crc8 = "00000001"
-		
-		wait for clk_period*5; 
-		
-		message <= "0000000010011001";	-- crc8 = "10110001"
-		
-		wait for clk_period*5; 
-		
-		message <= "0000000000000111";	-- crc8 = "10010111"
-		
-		wait for clk_period*5;
-		
+--		message <= X"00000004";		-- crc8 = X"C4"
+--		wait for clk_period * 5;	
+
+--		message <= X"000000DD";		-- crc8 = X"48"
+--		wait for clk_period * 5;	
+
+--		message <= X"00000123";		-- crc8 = X"21"
+--		wait for clk_period * 5;		
+
+--		message <= X"0000ABCD";		-- crc8 = X"EE"
+--		wait for clk_period * 5;	
+
+--		message <= X"00010101";		-- crc8 = X"83"
+--		wait for clk_period * 5;	
+
+--		message <= X"89ABCDEF";		-- crc8 = X"47"
+--		wait for clk_period * 5;
+
       wait;
    end process;
-
 END;

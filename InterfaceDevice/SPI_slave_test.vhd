@@ -79,7 +79,7 @@ BEGIN
 		WAIT FOR sclk_period / 2;
 		sclk <= '1';
 		WAIT FOR sclk_period / 2;
-   END PROCESS scl_proc;
+   END PROCESS sclk_proc;
  
    -- Stimulus process
    stim_proc: PROCESS
@@ -90,12 +90,12 @@ BEGIN
 		reset_n <= '1';
 		WAIT FOR sclk_period;
 
-		data_from_master <= "10101011";
+		data_from_master <= "10011001";
 		WAIT FOR sclk_period;
 
-		tx_data_load_en <= '1';
+		tx_data <= "11010101";
 		WAIT FOR sclk_period;
-		tx_data <= "11001001";
+		tx_data_load_en <= '1';
 		WAIT FOR sclk_period;
 		tx_data_load_en <= '0';
 		WAIT FOR sclk_period;

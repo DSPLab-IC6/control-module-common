@@ -26,7 +26,7 @@ USE work.CRC_8.ALL;
 
 ENTITY CRC8_counter IS
 	GENERIC (
-		data_width : INTEGER := 16
+		data_width : INTEGER := 32
 	);
 
 	PORT(

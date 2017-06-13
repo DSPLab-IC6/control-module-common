@@ -12,3 +12,5 @@ vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl
 spl2sym -intstyle ise -family spartan3e -w Control_module.spl H:/diplom2017/InterfaceDevice/Control_module.sym 
 vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl -module Control_module -template I:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e -w Control_module.spl I:/diplom2017/InterfaceDevice/Control_module.sym 
+vhdtdtfi -lib work Control_module.vhd -prj InterfaceDevice -o Control_module.spl -module Control_module -template I:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Control_module.spl I:/diplom2017/InterfaceDevice/Control_module.sym 

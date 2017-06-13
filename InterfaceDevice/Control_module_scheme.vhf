@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.1
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Control_module_scheme.vhf
--- /___/   /\     Timestamp : 05/31/2017 02:04:17
+-- /___/   /\     Timestamp : 06/12/2017 14:31:21
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -49,12 +49,13 @@ architecture BEHAVIORAL of Control_module_scheme is
    signal XLXN_83       : std_logic;
    signal XLXN_84       : std_logic_vector (7 downto 0);
    signal XLXN_85       : std_logic;
-   signal XLXN_88       : std_logic;
    signal XLXN_89       : std_logic_vector (3 downto 0);
-   signal XLXN_90       : std_logic;
    signal XLXN_91       : std_logic_vector (7 downto 0);
    signal XLXN_92       : std_logic;
    signal XLXN_93       : std_logic_vector (7 downto 0);
+   signal XLXN_100      : std_logic;
+   signal XLXN_101      : std_logic;
+   signal XLXN_102      : std_logic;
    signal CD_MISO_DUMMY : std_logic;
    component SPI_slave
       port ( sclk            : in    std_logic; 
@@ -70,44 +71,46 @@ architecture BEHAVIORAL of Control_module_scheme is
    end component;
    
    component SPI_master
-      port ( clk        : in    std_logic; 
-             miso       : in    std_logic; 
-             tr_enable  : in    std_logic; 
-             reset_n    : in    std_logic; 
-             tx_data    : in    std_logic_vector (7 downto 0); 
-             sclk       : out   std_logic; 
-             mosi       : out   std_logic; 
-             busy       : out   std_logic; 
-             ss_n       : out   std_logic_vector (14 downto 0); 
-             rx_data    : out   std_logic_vector (7 downto 0); 
-             slave_addr : in    std_logic_vector (3 downto 0));
+      port ( clk             : in    std_logic; 
+             miso            : in    std_logic; 
+             tr_enable       : in    std_logic; 
+             tx_data         : in    std_logic_vector (7 downto 0); 
+             slave_addr      : in    std_logic_vector (3 downto 0); 
+             sclk            : out   std_logic; 
+             mosi            : out   std_logic; 
+             ss_n            : out   std_logic_vector (14 downto 0); 
+             rx_data         : out   std_logic_vector (7 downto 0); 
+             rx_data_request : in    std_logic; 
+             busy            : out   std_logic; 
+             reset_n         : in    std_logic);
    end component;
    
    component Control_module
-      port ( clk                  : in    std_logic; 
-             ss_spi_busy          : in    std_logic; 
-             data_to_ss           : out   std_logic_vector (7 downto 0); 
-             load_data_to_ss      : out   std_logic; 
-             data_from_ss         : in    std_logic_vector (7 downto 0); 
-             request_data_from_ss : out   std_logic; 
-             cd_spi_busy          : in    std_logic; 
-             load_data_to_cd      : out   std_logic; 
-             data_to_cd           : out   std_logic_vector (7 downto 0); 
-             request_data_from_cd : out   std_logic; 
-             data_from_cd         : in    std_logic_vector (7 downto 0); 
-             spi_reset_n          : out   std_logic; 
-             module_number        : out   std_logic_vector (3 downto 0); 
-             data_to_module       : out   std_logic_vector (7 downto 0); 
-             module_tr_enable     : out   std_logic; 
-             data_from_module     : in    std_logic_vector (7 downto 0); 
-             module_spi_busy      : in    std_logic);
+      port ( cd_spi_busy              : in    std_logic; 
+             ss_spi_busy              : in    std_logic; 
+             clk                      : in    std_logic; 
+             data_from_cd             : in    std_logic_vector (7 downto 0); 
+             data_from_ss             : in    std_logic_vector (7 downto 0); 
+             data_from_module         : in    std_logic_vector (7 downto 0); 
+             request_data_from_cd     : out   std_logic; 
+             load_data_to_cd          : out   std_logic; 
+             request_data_from_ss     : out   std_logic; 
+             load_data_to_ss          : out   std_logic; 
+             module_tr_enable         : out   std_logic; 
+             spi_reset_n              : out   std_logic; 
+             data_to_cd               : out   std_logic_vector (7 downto 0); 
+             data_to_ss               : out   std_logic_vector (7 downto 0); 
+             module_number            : out   std_logic_vector (3 downto 0); 
+             data_to_module           : out   std_logic_vector (7 downto 0); 
+             request_data_from_module : out   std_logic; 
+             module_spi_busy          : in    std_logic);
    end component;
    
 begin
    CD_MISO <= CD_MISO_DUMMY;
    CD_SPI_slave : SPI_slave
       port map (mosi=>CD_MOSI,
-                reset_n=>XLXN_88,
+                reset_n=>XLXN_100,
                 rx_data_request=>XLXN_85,
                 sclk=>CD_SCLK,
                 ss_n=>CD_SS_N,
@@ -120,11 +123,12 @@ begin
    CM_SPI_master : SPI_master
       port map (clk=>CLK,
                 miso=>MODULE_MISO,
-                reset_n=>XLXN_88,
+                reset_n=>XLXN_100,
+                rx_data_request=>XLXN_101,
                 slave_addr(3 downto 0)=>XLXN_89(3 downto 0),
                 tr_enable=>XLXN_92,
                 tx_data(7 downto 0)=>XLXN_93(7 downto 0),
-                busy=>XLXN_90,
+                busy=>XLXN_102,
                 mosi=>MODULE_MOSI,
                 rx_data(7 downto 0)=>XLXN_91(7 downto 0),
                 sclk=>MODULE_SCLK,
@@ -136,7 +140,7 @@ begin
                 data_from_cd(7 downto 0)=>XLXN_84(7 downto 0),
                 data_from_module(7 downto 0)=>XLXN_91(7 downto 0),
                 data_from_ss(7 downto 0)=>XLXN_79(7 downto 0),
-                module_spi_busy=>XLXN_90,
+                module_spi_busy=>XLXN_102,
                 ss_spi_busy=>XLXN_76,
                 data_to_cd(7 downto 0)=>XLXN_82(7 downto 0),
                 data_to_module(7 downto 0)=>XLXN_93(7 downto 0),
@@ -146,12 +150,13 @@ begin
                 module_number(3 downto 0)=>XLXN_89(3 downto 0),
                 module_tr_enable=>XLXN_92,
                 request_data_from_cd=>XLXN_85,
+                request_data_from_module=>XLXN_101,
                 request_data_from_ss=>XLXN_80,
-                spi_reset_n=>XLXN_88);
+                spi_reset_n=>XLXN_100);
    
    State_SPI_slave : SPI_slave
       port map (mosi=>CD_MOSI,
-                reset_n=>XLXN_88,
+                reset_n=>XLXN_100,
                 rx_data_request=>XLXN_80,
                 sclk=>CD_SCLK,
                 ss_n=>ST_SS_N,

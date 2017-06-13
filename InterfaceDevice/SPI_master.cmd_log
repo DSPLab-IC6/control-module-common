@@ -7,3 +7,7 @@ spl2sym -intstyle ise -family spartan3e -w SPI_master.spl H:/diplom2017/Interfac
 vhdtdtfi -lib work SPI_master.vhd -prj InterfaceDevice -o SPI_master.spl -module SPI_master -template H:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 vhdtdtfi -lib work SPI_master.vhd -prj InterfaceDevice -o SPI_master.spl -module SPI_master -template H:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e -w SPI_master.spl H:/diplom2017/InterfaceDevice/SPI_master.sym 
+vhdtdtfi -lib work SPI_master.vhd -prj InterfaceDevice -o SPI_master.spl -module SPI_master -template I:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w SPI_master.spl I:/diplom2017/InterfaceDevice/SPI_master.sym 
+vhdtdtfi -lib work SPI_master.vhd -prj InterfaceDevice -o SPI_master.spl -module SPI_master -template I:/Xilinx/14.1/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w SPI_master.spl I:/diplom2017/InterfaceDevice/SPI_master.sym 
